@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>{{ page.title }}</title>
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  <meta name="author" content="{{ site.author.name }}">
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/app.css">
+  <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/style.css">
+
+  <script src="{{ ASSET_PATH }}/javascripts/modernizr.foundation.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <header>
+    <div class="row">
+      <div class="twelve columns">
+        <hgroup>
+          <h1>Mobility & Flexibility</h1>
+          <h3>Resources to educate and help improve your mobility and flexibility.</h3>
+        </hgroup>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="row">
+      <div class="three columns">
+        <section id="sidebar" role="complementary">
+          <dl class="tabs vertical hide-on-phones">
+            <dd {%if page.url == '/index.html'%}class="active"{%endif%}><a href="/index.html">Mobility vs. Flexibility</a></dd>
+            <dd {%if page.url == '/pages/mobility-shoulder.html'%}class="active"{%endif%}><a href="/pages/mobility-shoulder.html">Shoulder Mobility</a></dd>
+            <dd {%if page.url == '/pages/mobility-wrist.html'%}class="active"{%endif%}><a href="/pages/mobility-wrist.html">Wrist Mobility</a></dd>
+            <dd {%if page.url == '/pages/mobility-hip.html'%}class="active"{%endif%}><a href="/pages/mobility-hip.html">Hip Mobility</a></dd>
+            <dd {%if page.url == '/pages/mobility-knee.html'%}class="active"{%endif%}><a href="/pages/mobility-knee.html">Knee Mobility</a></dd>
+            <dd {%if page.url == '/pages/mobility-ankle.html'%}class="active"{%endif%}><a href="/pages/mobility-ankle.html">Ankle Mobility</a></dd>
+            <dd {%if page.url == '/pages/flexibility-upperbody.html'%}class="active"{%endif%}><a href="/pages/flexibility-upperbody.html">Upper Body Flexibility</a></dd>
+            <dd {%if page.url == '/pages/flexibility-lowerbody.html'%}class="active"{%endif%}><a href="/pages/flexibility-lowerbody.html">Lower Body Flexibility</a></dd>
+          </dl>
+        </section>
+      </div>
+      <div class="nine columns">
+        <section id="content" role="main">
+          <div class="row">
+            <div class="twelve columns">
+            	{{ content }}
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="row">
+      <div class="twelve columns">
+        <small></small>
+      </div>
+    </div>
+  </footer>
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  
+  <script src="javascripts/jquery.js"></script>
+  
+  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+  
+  <script src="javascripts/jquery.foundation.forms.js"></script>
+  
+  <script src="javascripts/jquery.foundation.reveal.js"></script>
+  
+  <script src="javascripts/jquery.foundation.orbit.js"></script>
+  
+  <script src="javascripts/jquery.foundation.navigation.js"></script>
+  
+  <script src="javascripts/jquery.foundation.buttons.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tabs.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tooltips.js"></script>
+  
+  <script src="javascripts/jquery.foundation.accordion.js"></script>
+  
+  <script src="javascripts/jquery.placeholder.js"></script>
+  
+  <script src="javascripts/jquery.foundation.alerts.js"></script>
+  
+  <script src="javascripts/jquery.foundation.topbar.js"></script>
+  
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+header {
+	background: #9565C2;
+	border-bottom: 3px solid #333;
+	margin-bottom: 20px;
+}
+
+header h1 {
+	color: #FFF;
+}
+
+dl.tabs.vertical dd a:hover {
+	background: #CCC;
+}
