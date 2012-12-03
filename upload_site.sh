@@ -10,7 +10,7 @@ if [[ $? -ne 0 ]]; then
 fi
 
 echo "Uploading to $USER@$HOST:$DESTDIR..."
-rsync -v --progress --compress --recursive --checksum --delete  _site/ $USER@$HOST:$DESTDIR
+rsync --progress --compress --recursive --checksum --delete  _site/ $USER@$HOST:$DESTDIR
 
 if [[ $? -eq 0 ]]; then
   echo "Done!"
