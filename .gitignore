@@ -8,3 +8,6 @@ Thumbs.db
 
 .rbenv-version
 .rvmrc
+.serverinfo
+site.sublime-workspace
+site.sublime-project

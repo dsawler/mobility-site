@@ -50,14 +50,14 @@
       <div class="three columns">
         <section id="sidebar" role="complementary">
           <dl class="tabs vertical hide-on-phones">
-            <dd {%if page.url == '/index.html'%}class="active"{%endif%}><a href="/index.html">Mobility vs. Flexibility</a></dd>
-            <dd {%if page.url == '/pages/mobility-shoulder.html'%}class="active"{%endif%}><a href="/pages/mobility-shoulder.html">Shoulder Mobility</a></dd>
-            <dd {%if page.url == '/pages/mobility-wrist.html'%}class="active"{%endif%}><a href="/pages/mobility-wrist.html">Wrist Mobility</a></dd>
-            <dd {%if page.url == '/pages/mobility-hip.html'%}class="active"{%endif%}><a href="/pages/mobility-hip.html">Hip Mobility</a></dd>
-            <dd {%if page.url == '/pages/mobility-knee.html'%}class="active"{%endif%}><a href="/pages/mobility-knee.html">Knee Mobility</a></dd>
-            <dd {%if page.url == '/pages/mobility-ankle.html'%}class="active"{%endif%}><a href="/pages/mobility-ankle.html">Ankle Mobility</a></dd>
-            <dd {%if page.url == '/pages/flexibility-upperbody.html'%}class="active"{%endif%}><a href="/pages/flexibility-upperbody.html">Upper Body Flexibility</a></dd>
-            <dd {%if page.url == '/pages/flexibility-lowerbody.html'%}class="active"{%endif%}><a href="/pages/flexibility-lowerbody.html">Lower Body Flexibility</a></dd>
+            <dd {%if page.url == '/index.html'%}class="active"{%endif%}><a href="{{BASE_PATH}}/">Mobility vs. Flexibility</a></dd>
+            <dd {%if page.url == '/pages/mobility-shoulder.html'%}class="active"{%endif%}><a href="{{BASE_PATH}}/pages/mobility-shoulder.html">Shoulder Mobility</a></dd>
+            <dd {%if page.url == '/pages/mobility-wrist.html'%}class="active"{%endif%}><a href="{{BASE_PATH}}/pages/mobility-wrist.html">Wrist Mobility</a></dd>
+            <dd {%if page.url == '/pages/mobility-hip.html'%}class="active"{%endif%}><a href="{{BASE_PATH}}/pages/mobility-hip.html">Hip Mobility</a></dd>
+            <dd {%if page.url == '/pages/mobility-knee.html'%}class="active"{%endif%}><a href="{{BASE_PATH}}/pages/mobility-knee.html">Knee Mobility</a></dd>
+            <dd {%if page.url == '/pages/mobility-ankle.html'%}class="active"{%endif%}><a href="{{BASE_PATH}}/pages/mobility-ankle.html">Ankle Mobility</a></dd>
+            <dd {%if page.url == '/pages/flexibility-upperbody.html'%}class="active"{%endif%}><a href="{{BASE_PATH}}/pages/flexibility-upperbody.html">Upper Body Flexibility</a></dd>
+            <dd {%if page.url == '/pages/flexibility-lowerbody.html'%}class="active"{%endif%}><a href="{{BASE_PATH}}/pages/flexibility-lowerbody.html">Lower Body Flexibility</a></dd>
           </dl>
         </section>
       </div>
@@ -111,10 +111,10 @@
   -->
   
   <!-- Included JS Files (Compressed) -->
-  <script src="javascripts/jquery.js"></script>
-  <script src="javascripts/foundation.min.js"></script>
+  <script src="{{ASSET_PATH}}/javascripts/jquery.js"></script>
+  <script src="{{ASSET_PATH}}/javascripts/foundation.min.js"></script>
   
   <!-- Initialize JS Plugins -->
-  <script src="javascripts/app.js"></script>
+  <script src="{{ASSET_PATH}}/javascripts/app.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 source .serverinfo 
 
 echo "Generating site..."
-jekyll
+jekyll --safe
 
 if [[ $? -ne 0 ]]; then
   echo "Could not generate site!"
